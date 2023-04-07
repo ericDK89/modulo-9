@@ -5,6 +5,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   cursor: pointer;
 }
@@ -61,18 +65,18 @@ header footer {
   background-color: rgb(102, 41, 158);
 }
 
-section {
+#form-section {
   padding: 3rem 1rem;
   background-color: gainsboro;
 
   display: none;
 }
 
-section h2 {
+#form-section h2 {
   font-size: 2rem;
 }
 
-section .container {
+#form-section .container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -104,4 +108,46 @@ form button[type="submit"] {
 
 form button[type="reset"] {
   background-color: firebrick;
+}
+
+#images-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  list-style: none;
+}
+
+#images-list li {
+  position: relative;
+  max-height: 380px;
+  overflow-y: hidden;
+}
+
+#images-list img {
+  width: 100%;
+}
+
+#images-list div {
+  padding: 2rem 1rem;
+
+  background-color: rgb(0, 0, 0, 0.7);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+
+  transition: all ease 0.5s;
+}
+
+#images-list a {
+  font-size: 1.125rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+#images-list li:hover .link-div {
+  opacity: 1;
 }
