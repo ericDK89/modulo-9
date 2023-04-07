@@ -64,6 +64,8 @@ header footer {
 section {
   padding: 3rem 1rem;
   background-color: gainsboro;
+
+  display: none;
 }
 
 section h2 {
